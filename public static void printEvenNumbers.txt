@@ -1,3 +1,7 @@
+
+
+# First Task: Printing the Even Numbers----------------------------------------------------------------
+
 public static void printEvenNumbers(int[] numbers) {
         for( int i = 0; i < numbers.length; i++ ) {
             if( numbers[i] % 2 == 0 ) {
@@ -5,6 +9,11 @@ public static void printEvenNumbers(int[] numbers) {
             }
         }
     }
+
+
+
+# Second Task: Printing Odd Numbers-----------------------------------------------------------------------
+
     public static void printOddNumbers(int[] numbers) {
         for( int i = 0; i < numbers.length; i++ ) {
             if( numbers[i] % 2 != 0 ) {
@@ -13,6 +22,8 @@ public static void printEvenNumbers(int[] numbers) {
         }
     }
 
+
+# third Task: Calculating and displaying all of the summed numbers-------------------------------------------------
     public static void printSum(int[] numbers) {
         int sum = 0;
         for( int i = 0; i < numbers.length; i++ ) {
@@ -21,6 +32,9 @@ public static void printEvenNumbers(int[] numbers) {
         System.out.println("Sum: " + sum);
     }
 
+
+
+-------------------------------------------------------------------------------------------
     public static void printPrimeNumbers(int[] numbers) {
         for( int i = 0; i < numbers.length; i++ ) {
             if( isPrime(numbers[i]) ) {
@@ -29,6 +43,8 @@ public static void printEvenNumbers(int[] numbers) {
         }
     }
 
+
+# Fourth Task: This is to check if its a prime number-------------------------------------------------------------
     public static boolean isPrime(int num) {
         if( num <= 1 ) {
             return false;
@@ -41,6 +57,9 @@ public static void printEvenNumbers(int[] numbers) {
         return true;
     }
 
+
+
+# Fifth Task: Find and display all perfect square in the range-------------------------------------------------
     public static void printPerfectSquareNumbers(int[] numbers) {
         for( int i = 0; i < numbers.length; i++ ) {
             if( isPerfectSquare(numbers[i]) ) {
