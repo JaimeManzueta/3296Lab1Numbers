@@ -2,11 +2,14 @@ import java.util.Scanner;
 
 public class Lab1Numbers {
     public static void main(String[] args) {
+
+        // This is where we input the list numbers 
         Scanner input = new Scanner(System.in);
         int[] integernumbers;
         System.out.println("Enter in the list of numbers, separated by spaces. Enter n for default range (1-100) and hit enter for the end of the list: ");
         String userSingleInput = input.nextLine();
-        
+
+            // A if condition statement where you entered "N" then 
             if( userSingleInput.equals("n") ) {
                 integernumbers = new int[100];
                 for( int i = 1; i <= 100; i++ ) {
@@ -22,6 +25,8 @@ public class Lab1Numbers {
                     integernumbers[i] = Integer.parseInt(userInput[i]);
                 }
             }
+
+        // This is for printing all of the descriptive numbers from the functions 
         System.out.println("Even Numbers:");
         printEvenNumbers(integernumbers);
         System.out.println("Odd Numbers:");
@@ -38,6 +43,7 @@ public class Lab1Numbers {
         
     }
 
+    // This function will print an EVEN Number: 
     public static void printEvenNumbers(int[] numbers) {
         for( int i = 0; i < numbers.length; i++ ) {
             if( numbers[i] % 2 == 0 ) {
@@ -45,6 +51,8 @@ public class Lab1Numbers {
             }
         }
     }
+
+    // This function prints out odd numbers 
     public static void printOddNumbers(int[] numbers) {
         for( int i = 0; i < numbers.length; i++ ) {
             if( numbers[i] % 2 != 0 ) {
@@ -53,6 +61,7 @@ public class Lab1Numbers {
         }
     }
 
+    // this prints out all of the sum 
     public static void printSum(int[] numbers) {
         int sum = 0;
         for( int i = 0; i < numbers.length; i++ ) {
